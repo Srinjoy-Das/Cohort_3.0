@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Form</h1>
+
+    <fieldset>
+        <legend>Student Form</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name" required><br><br>
+
+        <label for="name">Email:</label>
+        <input type="text" id="email" placeholder="Email" required><br><br>
+
+        <label for="name">Mobile:</label>
+        <input type="text" id="mobile" placeholder="Mobile" required><br><br>
+    </fieldset>
+
+    <br><br>
+    <fieldset>
+        <legend>Address Info</legend>
+
+        <label for="address">Address:</label>
+        <textarea id="address" placeholder="Address" required></textarea><br><br>
+
+        <label for="city">City:</label>
+        <select id="city" required>
+            <option value="">Select a city</option>
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Chicago">Chicago</option>
+        </select><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" required>
+            <option value="">Select a country</option>
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+            <option value="brazil">Brazil</option>
+        </select><br><br>
+    </fieldset>
+
+    <br><br>
+
+    <label for="courses">Select Your Courses:</label>
+    <select id="courses">
+        <optgroup label="Frontend">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+        </optgroup>
+
+        <optgroup label="Backend">
+            <option value="nodejs">Node.js</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+        </optgroup>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+</body>
+</html>
