@@ -1,0 +1,39 @@
+@font-face {
+    font-family: horror;
+    src: url(./HelpMe.ttf);
+}
+@font-face {
+    font-family: lovely;
+    src: url(./Lucy\ Said\ Ok\ Personal\ Use.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+head, body {
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    color: rgb(165, 0, 6);
+    background-color: rgb(14, 14, 14);
+    font-size: 100px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: horror;
+}
+
+h3{
+    color: rgb(165, 0, 6);
+    background-color: rgb(242, 236, 236);
+    font-size: 100px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: lovely;
+}
