@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#info {
+  height: 750px;
+  width: 1485px;
+  background-color: rgb(255, 231, 159);
+  box-sizing: border-box;
+  border: 20px solid white;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+#logo {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  left: 4%;
+  top: 1%;
+  z-index: 2;
+}
+
+#pikachu {
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  left: 45%;
+  top: 12%;
+  z-index: 2;
+}
+
+#ball {
+  position: absolute;
+  z-index: 2;
+  opacity: 15%;
+  height: 300px;
+  width: 300px;
+  top: 70%;
+  left: 7%;
+}
+
+#innerBox {
+  position: relative;
+  height: 100%;
+  width: 65%;
+  background-color: rgb(255, 191, 0);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-top: 170px;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  z-index: 2;
+  left: 93%;
+  top: 4%;
+}
+
+.menu button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 90%;
+  height: 70px;
+  width: 70px;
+}
+
+#menuButton:hover {
+  background-color: rgb(255, 191, 0);
+}
+
+.menu img {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+
+.dots {
+  position: absolute;
+  left: 97%;
+  gap: 8px;
+  top: 45%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background-color: #ffc107;
+  border-radius: 50%;
+}
+
+.dots span:first-child {
+  background-color: black;
+  width: 13px;
+  height: 13px;
+}
+
+.text {
+  margin-left: 70px;
+}
+h1 {
+  margin-top: 10px;
+  font-size: 150px;
+}
+h4 {
+  margin-top: 20px;
+}
