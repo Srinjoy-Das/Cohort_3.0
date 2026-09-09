@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(179, 204, 251);
+}
+
+#innerBox {
+    height: 100%;
+    width: 96%;
+
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 50%;
+
+    transform: translate(-50%, -41%);
+
+    background-color: rgb(242, 220, 255);
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+#logo{
+    position: absolute;
+    z-index: 3;
+    height: 250px;
+    width: 250px;
+
+    left: 50%;
+    bottom: 72%;
+
+    transform: translate(-50%, 0%);
+}
+
+.menuButton{
+    background-color: transparent;
+    position: absolute;
+
+    left: 30px;
+    top: 30px;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+
+    opacity: 50%;
+}
+
+.menuButton img{
+    height: 24px;
+    width: 24px;
+}
+
+.mode{
+    background-color: transparent;
+    position: absolute;
+
+    right: 30px;
+    top: 30px;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+
+    opacity: 50%;
+}
+
+.mode:hover{
+    background-color: rgb(191, 191, 191);
+}
+
+.mode img{
+    height: 24px;
+    width: 24px;
+}
+
+#search{
+    height: 50px;
+    width: 300px;
+    border-radius: 30px;
+
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    left: 30px;
+    top: 150px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#search:hover{
+    background-color: rgb(191, 191, 191);
+}
+
+h3{
+    opacity: 50%;
+}
+
+.sort{
+    background-color: white;
+    position: absolute;
+    right: 40px;
+    top: 150px;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.sort:hover{
+    background-color: rgb(191, 191, 191);
+}
+
+.sort img{
+    height: 24px;
+    width: 24px;
+}
+
+.dropDownMenu{
+    position: absolute;
+    z-index: 2;
+    right: 120px;
+    top: 150px;
+}
+
+#filterTypes {
+    height: 50px;
+    width: 180px;
+
+    padding-left: 20px;
+    align-items: center;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: white;
+
+    font-size: 14px;
+    color: #222;
+
+    outline: none;
+    cursor: pointer;
+}
+
+.pokemonContainer{
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    right: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pokemon{
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    position: relative;
+
+    border-bottom: 5px solid;
+}
+
+.pokemonImage{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.element{
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.like{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 80%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.like img{
+    height: 15px;
+    width: 15px;
+}
+
+.enter{
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 80%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+.enter img{
+    height: 20px;
+    width: 20px;
+}
+
+.pokemonImage img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+#meowscarada {
+    border-bottom-color: #6bc46d;
+}
+
+#pawniard {
+    border-bottom-color: #71879b;
+}
+
+#houndoom {
+    border-bottom-color: #f0785f;
+}
+
+#inkay {
+    border-bottom-color: #7896ed;
+}
+
+.pokemonInfo{
+    padding: 0 20px;
+}
+
+.pokemonInfo h2 {
+    font-size: 20px;
+    color: #17324d;
+}
+
+.pokemonInfo p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+#Disclaimer{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: 5%;
+
+    transform: translate(-50%, 0%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#Disclaimer img{
+    height: 20px;
+    width: 20px;
+}
