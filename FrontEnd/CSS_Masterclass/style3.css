@@ -7,388 +7,68 @@ html,
 body {
     height: 100%;
     width: 100%;
+    background-color: rgb(29, 29, 29);
 }
 
-main{
-    height: 100%;
+nav{
     width: 100%;
-    background-color: black;
-    display: grid;
-
-    grid-template-columns: 22% 20% 7% 27% 22%;
-    grid-template-rows: 29% 26% 7% 18% 20%;
-
-    grid-template-areas: 
-    "top-left top-center1 top-center1 top-center2 top-right"
-    "top-left middle-center middle-center middle-center top-right"
-    "bottom-left middle-center middle-center middle-center top-right"
-    "bottom-left middle-center middle-center middle-center bottom-right"
-    "bottom-left bottom-center1 bottom-center2 bottom-center2 bottom-right";
-}
-
-.top-left{
-    background-color: rgb(252, 218, 224);
-    grid-area: top-left;
-    border: 5px solid black;
-    border-radius: 20px;
-    padding: 25px;
-}
-.top-left-div1{
+    height: 80px;
     display: flex;
-    justify-content: space-between;
-}
-.top-left-div1 h1{
-    font-size: 23px;
-}
-.top-left-div1 p{
-    font-size: 30px;
-}
-.top-left img{
-    margin-left: 40px;
-    height: 180px;
-    width: 180px;
-}
-.top-left-div2 h1{
-    font-size: 43px;
-}
-.top-left-div2 button{
-    margin-top: 10px;
-    height: 25px;
-    width: 80px;
-    font-size: 11px;
-    border: none;
-    background-color: rgb(252, 241, 243);
-    border-radius: 20px;
-}
-
-.bottom-left{
-    background-color: rgb(42, 41, 41);
-    grid-area: bottom-left;
-    border: 5px solid black;
-    border-radius: 20px;
-    padding: 20px;
-}
-.bottom-left-div1{
     color: white;
-    font-size: 12px;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-.bottom-left-div1 span{
-    color: pink;
-}
-.bottom-left-div1 button{
-    height: 30px;
-    width: 30px;
-    background-color: rgb(85, 84, 84);
-    border: none;
-    border-radius: 10px;
-    color: white;
-}
-.bottom-left-div2{
-    margin-bottom: 20px;
-    display: flex;
+    justify-content: center;
     gap: 20px;
 }
-.bottom-left-div2 img{
-    height: 140px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-.bottom-left-div3 img{
-    height: 25px;
-    width: 25px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: -15px;
-    border: 1px solid white;
-}
 
-
-
-.top-right{
-    background-color: rgb(255, 255, 255);
-    grid-area: top-right;
-    border: 5px solid black;
-    border-radius: 20px;
-    padding: 20px;
-}
-.top-right h3{
+h4{
     font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.top-right h2{
-    margin-top: 50px;
-}
-.top-right h1{
-    font-size: 60px;
-}
-.top-right-div1 img{
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: -15px;
-    border: 3px solid white;
-}
-.top-right-div2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-.top-right-div2 h3{
-    font-size: 12px;
-    font-weight: 100;
-}
-.top-right-div2 span{
-    font-size: 20px;
-    color: rgb(233, 98, 2);
-    font-weight: 600;
-}
-.top-right-div2 button{
-    height: 70px;
-    width: 70px;
-    border: none;
-    background-color: rgb(251, 210, 217);
-    border-radius: 16px;
-}
-.top-right-div2 button img{
-    height: 50px;
-    width: 50px;
-}
-
-
-.bottom-right{
-    background-color: rgb(255, 255, 255);
-    grid-area: bottom-right;
-    border: 5px solid black;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.bottom-right img{
-    height: 100px;
-    width: 120px;
-}
-.bottom-right h1{
-    font-size: 40px;
-}
-.bottom-right button{
-    margin-top: 25px;
-    height: 35px;
-    width: 120px;
-    border: none;
-    background-color: rgb(252, 207, 215);
-    border-radius: 20px;
-}
-
-
-.top-center1{
-    background-color: rgb(255, 255, 255);
-    grid-area: top-center1;
-    border: 5px solid black;
-    border-radius: 20px;
-    padding: 30px;
-}
-.top-center1-div1{
-    display: flex;
-    justify-content: space-between;
-}
-.top-center1-div1 h1{
-    font-size: 50px;
-}
-.top-center1-div1 button{
-    height: 50px;
-    width: 50px;
-    border: none;
-    border-radius: 50%;
-    background-color: rgb(248, 214, 219);
-    font-size: 20px;
-}
-.top-center1-div2{
-    display: flex;
-    margin-top: 20px;
-    width: 50%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.top-center1-div2 button{
-    color: rgb(213, 79, 101);
-    font-size: 13px;
-    height: 30px;
-    width: 60px;
-    border: 1.2px solid gray;
-    border-radius: 20px;
-    background-color: transparent;
-}
-.top-center1-div2 h3{
-    font-weight: 100;
-    font-size: 13px;
-}
-
-
-.top-center2{
-    background-color: rgb(255, 255, 255);
-    grid-area: top-center2;
-    border: 5px solid black;
-    border-radius: 20px;
-    padding: 30px;
-}
-.top-center2-div1 p{
-    font-size: 20px;
-    font-weight:900;
-}
-.top-center2-div1 h1{
-    font-size: 60px;
-}
-.top-center2-div2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 15px;
-}
-.top-center2-div2 h3{
-    font-size: 12px;
-    font-weight: 100;
-}
-.top-center2-div2 span{
-    font-size: 20px;
-    color: rgb(2, 233, 2);
-    font-weight: 600;
-}
-.top-center2-div2 button{
-    height: 70px;
-    width: 70px;
-    border: none;
-    background-color: rgb(251, 210, 217);
-    border-radius: 16px;
-}
-.top-center2-div2 button img{
-    height: 50px;
-    width: 50px;
-}
-
-
-.middle-center{
-    background-color: rgb(253, 225, 229);
-    grid-area: middle-center;
-    border: 5px solid black;
-    border-radius: 20px;
     position: relative;
-    display: flex;
-    justify-content: center;
 }
-.circle{
+h4::after{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: coral;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all ease 0.4s;
+}
+h4:hover::after{
+    width: 100%;
+}
+
+button{
+    padding: 15px 30px;
+    margin: 20px;
+    background-color: transparent;
+    border: 3px solid lightblue;
+    color: lightblue;
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+button span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+button::after{
+    content: "";
     height: 100%;
     width: 50%;
-    background-color: pink;
-    border-radius: 50%;
-}
-#girl{
     position: absolute;
-    bottom: 0;
-    height: 450px;
+    background-color: aqua;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 0%) scale(0);
+    border-radius: 50%;
+    transition: all ease 0.5s;
 }
-
-
-.bottom-center1{
-    background-color: rgb(255, 255, 255);
-    grid-area: bottom-center1;
-    border: 5px solid black;
-    border-radius: 20px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+button:hover::after{
+    transform: translate(50%, 0%) scale(3);
 }
-.bottom-center1-div1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.bottom-center1-div1-font button{
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    border: none;
-    background-color: antiquewhite;
-    height: 40px;
-    width: 40px;
-    border-radius: 6px;
-}
-.bottom-center1-div2{
-    display: flex;
-    gap: 5px;
-    margin-top: 10px;
-}
-.colour1{
-    background-color: rgb(1, 1, 1);
-    height: 30px;
-    width: 30px;
-    border-radius: 10%;
-}
-.colour2{
-    background-color: gray;
-    height: 30px;
-    width: 30px;
-    border-radius: 10%;
-}
-.colour3{
-    background-color: pink;
-    height: 30px;
-    width: 30px;
-    border-radius: 10%;
-}
-.colour4{
-    background-color: rgb(255, 224, 230);
-    height: 30px;
-    width: 30px;
-    border-radius: 10%;
-}
-.bottom-center1-div3{
-    margin-top: 10px;
-}
-.bottom-center1-div3 button{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;    
-}
-.bottom-center1-div3 button:hover{
-    background-color: rgb(145, 80, 145);
-}
-
-.bottom-center2{
-    background-color: tomato;
-    grid-area: bottom-center2;
-    border: 5px solid black;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    
-}
-.bottom-center2-div{
-    padding-top: 15px;
-}
-.bottom-center2-div h1{
-    margin-bottom: 10px;
-    line-height: 0.9;
-    font-size: 25px;
-}
-
-.bottom-center2-div button{
-    margin-top: 10px;
-    height: 30px;
-    width: 120px;
-    background-color: black;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    cursor: pointer;
+button:hover{
+    color: black;
 }
