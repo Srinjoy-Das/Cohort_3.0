@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+}
+
+form {
+  height: 30%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  gap: 5px;
+}
+
+input {
+  padding: 10px 20px;
+  border: 1px solid whitesmoke;
+  outline: none;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid whitesmoke;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
