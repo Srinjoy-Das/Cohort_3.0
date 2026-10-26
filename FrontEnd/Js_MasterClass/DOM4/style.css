@@ -9,10 +9,22 @@ body {
   width: 100%;
   background-color: black;
   padding: 10px;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 form {
-  height: 30%;
+  height: fit-content;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -37,4 +49,67 @@ button {
   background-color: transparent;
   border-radius: 10px;
   cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: rgb(71, 71, 71);
+  color: white;
+}
+
+.users {
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.user_card {
+  background-color: rgb(25, 25, 25);
+  padding: 10px;
+  height: fit-content;
+  width: 20%;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+
+.img_box {
+  height: 70%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.img_box img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.text {
+  margin-top: 10px;
+  color: white;
+}
+
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+#edit {
+  background-color: darkcyan;
+}
+
+#edit:hover {
+  background-color: rgb(28, 184, 184);
+}
+
+#del {
+  background-color: darkred;
+}
+
+#del:hover {
+  background-color: red;
 }
