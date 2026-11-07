@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="h-screen bg-gray-200 flex justify-center items-center ">
       {isLogin ? (
-        users.map((elem) => <UsersCard users={elem} />)
+        users.map((elem) => <UsersCard key={elem.email} user={elem} />)
       ) : (
         <Register setIsLogin={setIsLogin} setUsers={setUsers} />
       )}

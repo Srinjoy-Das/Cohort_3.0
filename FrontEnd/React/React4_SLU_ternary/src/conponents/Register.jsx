@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 
-const Register = ({ setIsLogin }) => {
+const Register = ({ setIsLogin, setUsers }) => {
   const [formData, setFormData] = useState({
     name: "",
+    image: "",
     email: "",
     password: "",
   });
@@ -15,12 +16,13 @@ const Register = ({ setIsLogin }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault(); 
-    setUser((prev) => [ ...prev, { ...formData}]);
+    setUsers((prev) => [ ...prev, formData]);
     setFormData({
       name: "",
+      image: "",
       email: "",
       password: "",
-    })
+    });
   };
 
   return (
@@ -38,6 +40,15 @@ const Register = ({ setIsLogin }) => {
           className="border-2 p-2 rounded-lg"
           type="text"
           placeholder="Enter your Name"
+        />
+        <input
+          onChange={handleChange}
+          required
+          name="image"
+          value={formData.image}
+          className="border-2 p-2 rounded-lg"
+          type="url"
+          placeholder="Enter Image link"
         />
         <input
           onChange={handleChange}

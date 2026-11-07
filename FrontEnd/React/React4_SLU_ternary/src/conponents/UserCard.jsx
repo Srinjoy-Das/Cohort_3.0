@@ -6,7 +6,7 @@ const UserCard = ({ user }) => {
       <div className="w-60 h-70 rounded-lg overflow-hidden">
         <img
           className="h-full w-full object-cover"
-          src=""
+          src={user.image}
           alt="Image Here"
         />
       </div>
