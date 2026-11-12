@@ -18,6 +18,8 @@ const App = () => {
     localStorage.setItem("users", JSON.stringify(filterUser));
   };
 
+  const [updatedData, setUpdatedData] = useState(null);
+
   return (
     <div className="p-3 h-screen bg-gray-200">
       <Navbar setToggle={setToggle} />
@@ -25,12 +27,12 @@ const App = () => {
       {toggle ? (
         <div className="flex flex-wrap gap-2">
           {users.map((elem, index) => (
-            <Usercard ind={index} deleteUser={deleteUser} key={index} user={elem} />
+            <Usercard setToggle={setToggle} setUpdatedData={setUpdatedData} ind={index} deleteUser={deleteUser} key={index} user={elem} />
           ))}
         </div>
       ) : (
         <div>
-          <Form users={users} setUsers={setUsers} setToggle={setToggle} />
+          <Form users={users} setUsers={setUsers} setToggle={setToggle} updatedData={updatedData} />
         </div>
       )}
     </div>
