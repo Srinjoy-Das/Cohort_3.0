@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { MyStore } from "../context/MyContext";
 
-const Cart = ({ cart, setToggle, setCart }) => {
+const Cart = () => {
+  let { cart, setToggle, setCart } = useContext(MyStore);
   const total = cart.reduce((sum, product) => sum + product.price, 0);
 
   return (
@@ -53,7 +55,9 @@ const Cart = ({ cart, setToggle, setCart }) => {
                 ₹{product.price.toFixed(2)}
               </h3>
               <button
-                onClick={() => setCart((prev) => prev.filter((_, i) => i !== index))}
+                onClick={() =>
+                  setCart((prev) => prev.filter((_, i) => i !== index))
+                }
                 className="bg-red-500 p-2 rounded text-white cursor-pointer hover:bg-red-400"
               >
                 Delete
@@ -68,7 +72,9 @@ const Cart = ({ cart, setToggle, setCart }) => {
               ${total.toFixed(2)}
             </h2>
           </div>
-          <button className="bg-amber-600 p-2 rounded text-white cursor-pointer hover:bg-amber-400 text-xl">Buy Now</button>
+          <button className="bg-amber-600 p-2 rounded text-white cursor-pointer hover:bg-amber-400 text-xl">
+            Buy Now
+          </button>
         </div>
       )}
     </div>

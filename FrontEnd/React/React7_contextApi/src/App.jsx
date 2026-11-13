@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import ProductCard from "./components/ProductCard";
 import NavBar from "./components/NavBar";
 import Cart from "./components/Cart";
+import { MyStore } from "./context/MyContext";
 
 const App = () => {
-  const [toggle, setToggle] = useState(true);
-  const [cart, setCart] = useState([]);
+  
+  let {toggle, setToggle, cart, setCart} = useContext(MyStore);
 
   let products = [
     {
@@ -286,7 +287,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-4">
-      <NavBar setToggle={setToggle} />
+      <NavBar />
 
       {toggle ? (
         <div>
@@ -309,7 +310,7 @@ const App = () => {
           </div>
         </div>
       ) : (
-        <Cart cart={cart} setToggle={setToggle} setCart={setCart}/>
+        <Cart />
       )}
     </div>
   );
